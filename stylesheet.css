@@ -1,0 +1,393 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+text-decoration:none;
+border:none;
+outline:none;
+scroll-behavior:smooth;
+font-family:"Poppins",sans-serif;
+}
+
+:root{
+--bg-color:#111111;
+--second-bg-color:#151515;
+--text-color:white;
+--main-color:#04fffb;
+}
+
+html{
+font-size:62.5%;
+overflow-x:hidden;
+}
+
+body{
+background:var(--bg-color);
+color:var(--text-color);
+}
+
+section{
+min-height:100vh;
+padding:10rem 9% 8rem;
+}
+
+/* HEADER */
+
+.header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:3rem 9%;
+background:rgba(0,0,0,0.6);
+backdrop-filter:blur(10px);
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:100;
+}
+
+.logo{
+font-size:3rem;
+font-weight:800;
+color:white;
+cursor:pointer;
+}
+
+.logo span{
+color:var(--main-color);
+}
+
+.navbar a{
+font-size:1.8rem;
+color:white;
+margin-left:4rem;
+font-weight:500;
+border-bottom:3px solid transparent;
+transition:.3s;
+}
+
+.navbar a:hover{
+color:var(--main-color);
+border-bottom:3px solid var(--main-color);
+}
+
+/* HOME */
+
+.home{
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+text-align:center;
+gap:2rem;
+}
+
+.home-img img{
+width:15vw;
+border-radius:10px;
+box-shadow:0 0 20px var(--main-color);
+}
+
+.home-content h1{
+font-size:6rem;
+}
+
+.home-content h3{
+font-size:3rem;
+}
+
+.home-content p{
+font-size:1.8rem;
+max-width:900px;
+line-height:1.6;
+}
+
+/* SOCIAL ICONS */
+
+.social-icons a{
+display:inline-flex;
+justify-content:center;
+align-items:center;
+width:4.5rem;
+height:4.5rem;
+border:.2rem solid var(--main-color);
+border-radius:50%;
+font-size:2.4rem;
+color:var(--main-color);
+margin:3rem 1rem;
+transition:.3s;
+}
+
+.social-icons a:hover{
+background:var(--main-color);
+color:black;
+transform:scale(1.2);
+box-shadow:0 0 20px var(--main-color);
+}
+
+/* BUTTON */
+
+.btn{
+display:inline-block;
+padding:1rem 2.8rem;
+background:var(--main-color);
+border-radius:4rem;
+font-size:1.6rem;
+color:black;
+font-weight:600;
+}
+
+/* ABOUT */
+
+.about{
+display:flex;
+justify-content:center;
+align-items:center;
+gap:6rem;
+background:var(--second-bg-color);
+}
+
+.about-img img{
+width:22vw;
+border-radius:12px;
+box-shadow:0 0 25px var(--main-color);
+}
+
+.about-content p{
+font-size:1.8rem;
+line-height:1.6;
+max-width:700px;
+}
+
+/* HEADINGS */
+
+.heading{
+text-align:center;
+font-size:6rem;
+margin-bottom:5rem;
+}
+
+span{
+color:var(--main-color);
+}
+
+/* ============================= */
+/* BIG BLUE BOX (TECHNICAL) */
+/* ============================= */
+
+.skills-large{
+display:flex;
+flex-direction:column;
+gap:4rem;
+}
+
+.skill-card{
+background:var(--main-color);
+border-radius:40px;
+padding:4rem 5rem;
+color:black;
+}
+
+.skill-card h3{
+font-size:3.2rem;
+font-weight:800;
+margin-bottom:2rem;
+}
+
+.skill-card ul{
+padding-left:2rem;
+}
+
+.skill-card ul li{
+font-size:2.2rem;
+line-height:2;
+font-weight:500;
+}
+
+/* ============================= */
+/* SMALL BLUE BOX GRID */
+/* ============================= */
+
+.services-container{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:3rem;
+}
+
+.service-box{
+background:var(--main-color);
+border-radius:30px;
+padding:3rem;
+min-height:260px;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+.service-info{
+display:flex;
+flex-direction:column;
+align-items:center;
+text-align:center;
+gap:1.2rem;
+}
+
+.service-info h4{
+font-size:2.4rem;
+font-weight:800;
+}
+
+.service-info ul{
+list-style:none;
+}
+
+.service-info ul li{
+font-size:2rem;
+line-height:1.8;
+}
+
+/* CONTACT */
+
+.contact{
+background:var(--second-bg-color);
+}
+
+.contact form{
+max-width:70rem;
+margin:auto;
+text-align:center;
+}
+
+.contact input,
+.contact textarea{
+width:100%;
+padding:1.5rem;
+font-size:1.6rem;
+background:var(--bg-color);
+border:2px solid var(--main-color);
+border-radius:.8rem;
+color:white;
+margin:1rem 0;
+}
+
+/* FOOTER */
+
+.footer{
+padding:4rem 0;
+text-align:center;
+}
+
+.footer .social a{
+display:inline-block;
+width:42px;
+height:42px;
+line-height:42px;
+border:2px solid var(--main-color);
+border-radius:50%;
+color:var(--main-color);
+margin:0 10px;
+}
+
+.footer ul{
+margin:2rem 0;
+}
+
+.footer ul li{
+display:inline-block;
+margin:0 10px;
+}
+
+.footer ul li a{
+color:white;
+font-size:1.6rem;
+}
+
+.footer .copyright{
+margin-top:20px;
+font-size:1.6rem;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+.services-container{
+grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media(max-width:600px){
+
+.services-container{
+grid-template-columns:1fr;
+}
+
+}
+.card-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+margin-top:40px;
+}
+
+.card{
+background:#04fffb;
+color:black;
+padding:35px;
+border-radius:30px;
+box-shadow:0 10px 25px rgba(0,0,0,0.3);
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+.card h4{
+font-size:26px;
+font-weight:800;
+}
+
+.card ul{
+padding-left:20px;
+}
+
+.card ul li{
+font-size:18px;
+line-height:1.7;
+}
+
+.card p{
+font-size:18px;
+line-height:1.7;
+}
+/* ABOUT BLUE BOX */
+
+.about-container{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:50px;
+flex-wrap:wrap;
+}
+
+.about-card{
+background:#04fffb;
+color:black;
+padding:40px;
+border-radius:30px;
+max-width:700px;
+font-size:20px;
+line-height:1.7;
+box-shadow:0 10px 25px rgba(0,0,0,0.3);
+}
+
+.about-card p{
+font-size:20px;
+}
+
+.about-img img{
+width:280px;
+border-radius:20px;
+box-shadow:0 0 20px #04fffb;
+}
